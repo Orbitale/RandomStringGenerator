@@ -1,0 +1,31 @@
+{
+    "name": "orbitale/stg",
+    "description": "A simple random string generator in command line for PHP.",
+    "keywords": ["string", "random", "generation", "php"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Orbitale\\": "src/Orbitale/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/console": "~2.8",
+        "symfony/filesystem": "~2.8"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "authors": [
+        {
+            "name" : "Alexandre \"Pierstoval\" Rock Ancelet",
+            "email": "alex@orbitale.io",
+            "homepage": "http://www.orbitale.io/"
+        }
+    ],
+    "bin": [
+        "stg"
+    ]
+}
