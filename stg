@@ -32,7 +32,7 @@ if (!isset($_SERVER['PATH']) && isset($_SERVER['Path'])) {
     $_SERVER['PATH'] = $_SERVER['Path'];
 }
 
-$app = new Orbitale\RandomStringGenerator\Application('Symfony Installer', $appVersion);
+$app = new Orbitale\RandomStringGenerator\Application('Orbitale Random String Generator', $appVersion);
 $app->add(new Orbitale\RandomStringGenerator\AboutCommand($appVersion));
 $app->add(new Orbitale\RandomStringGenerator\GenerateCommand());
 

@@ -36,14 +36,14 @@ class AboutCommand extends Command
     {
         $this
             ->setName('about')
-            ->setDescription('Orbitale random string generator help.');
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $io = new SymfonyStyle($input, $output);
 
-        $io->title('Orbitale random string generator (' . $this->appVersion . ')');
+        $io->title($this->getApplication()->getName().' (' . $this->appVersion . ')');
 
         $io->text(<<<COMMAND_HELP
 This application is here to help you generate random codes based on a list of characters.
